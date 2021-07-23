@@ -7,11 +7,12 @@ function App() {
       var _names = prompt('enter your name','');
       var gender = prompt('enter your gender','');
  
-  function per(_names,age,gender) {
+  function per(_names,age,gender) 
+  {
 
-      
+      console.log(gender);
 
-        let message = "Hi Meyer " +console.log( gender[0]) + " you are above 18 ";
+        let message = "Hi Meyer " +gender[0] + " you are above 18 ";
 
         if (age <=18) {
 
@@ -19,46 +20,50 @@ function App() {
         }
         else{
           return false;
+          
         }
 
+       
+
+  }
+
+   var siz=2;
       
-        
-          //var arr=['_name','_surname','_gender','_age'];
-          let siz=4;
-          var arr = [siz] ;
+  var arr = [siz] ;
+      function information() {
+        //var arr=['_name','_surname','_gender','_age'];
+       
+       
+        for (let i = 0; i <siz; i++) {
+
+          arr[i] = prompt('enter name','');
+          arr[i] = prompt('enter surname','');
+          arr[i] = prompt('enter gender','');
+          arr[i] = prompt('enter age','');
          
-          for (let i = 0; i < 1; i++) {
+          console.log(arr[i]);
+      
+        }
+        for (let i = 0; i < siz; i++) {
 
-            arr[i] = prompt('enter name','');
-            arr[i] = prompt('enter surname','');
-            arr[i] = prompt('enter gender','');
-            arr[i] = prompt('enter age','');
-           
-            console.log(arr[i]);
-        
-          }
-          for (let i = 0; i < 1; i++) {
-
-            console.log(arr[i]);
-        
-          }
-          
+          console.log(arr[i]);
+      
+        }
       }
-
-
       
           
-
-    function total( int ,int,int ) {
       let sum ;
-      let num1 = 3;
-      let num2 = 5;
-      let num3 = 9;
+      var num1 = 3;
+      var num2 = 5;
+      var num3 = 5;
+
+    function total( num1 ,num2,num3 ) {
+      
 
 
       sum= num1+num2+num3;
-      console.log(sum);
-      return sum;
+      
+      return "total is : "+sum;
       
     }
 
@@ -71,10 +76,14 @@ function App() {
         console.log( per(_names,age,gender))
         
       }
+       
       {
-        console.log(total( int ,int,int ))
+        console.log(total( num1 ,num2,num3 ))
       }
       
+      {
+        console.log( information())
+      }
       
          </div>
       
